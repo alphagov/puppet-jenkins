@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.tasks.Mailer_-DescriptorImpl plugin="<%= @plugin -%>">
+<% @config_merged.sort.each do |key,val| -%>
+  <%= "<#{key}>#{val}</#{key}>" %>
+<% end -%>
+</hudson.tasks.Mailer_-DescriptorImpl>
